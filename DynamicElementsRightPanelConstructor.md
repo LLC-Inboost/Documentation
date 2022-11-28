@@ -2,7 +2,7 @@
 
 *Всі поля очікую с маленької букви
 
-ACCORDIONS
+**ACCORDIONS**
 - Title: { lang: string; value: string } [] *обовязкове
 - DefaultOpen: boolean чи буде відкритий аккордеон одразу
 - Properties [1]
@@ -16,12 +16,12 @@ PROPERTIES [1]
 При передачі $css[key] той елемент для якого призначений key буде без дефолтних стилів а будуть вставленні стилі які будуть передані в це поле,
 Це повинен бути валідний css (напряму без селектора, наприклад $css: {wrappper: “display:flex;margin:50px;”})
 [https://www.w3schools.com/css/css_syntax.asp] (тут про css)
-Type Container
+**Type Container**
 - Index: number *обовязкове
 - Type:  “Container” *обовязкове
 - $css: { container: CSS string }
 - innerElements: Properties [1] *обовязкове (така сама структура тільки вложена)
-Type Text
+**Type Text**
 - Caption: { lang: string; value: string } [] це опис для текст ареї
 - Index: number *обовязкове
 - Property: ключ від інтерфейсу ноди  { lang: string; value: string }[] *обовязкове
@@ -30,7 +30,7 @@ Type Text
 - $css: { wrapper: CSS string }
 - Placeholder: string
 - MultiLanguage: boolean (по дефолту true) чи буде записуватись значення в форматі {lang, value}[] чи просто string
-Type TextInput
+**Type TextInput**
 - Caption: { lang: string; value: string } [] це опис для текст ареї
 - Index: number *обовязкове
 - Property: ключ від інтерфейсу ноди  { lang: string; value: string }[] *обовязкове
@@ -39,20 +39,20 @@ Type TextInput
 - $css: { wrapper: CSS string }
 - Placeholder: string
 - MultiLanguage: boolean (по дефолту false) чи буде записуватись значення в форматі {lang, value}[] чи просто string
-Type Checkbox
+**Type Checkbox**
 - Caption: { lang: string; value: string } [] це опис
 - Index: number *обовязкове
 - Property: ключ від інтерфейсу ноди string *обовязкове
 - $css: { wrapper: CSS string, caption: CSS string, svg: CSS string }
 - Type:  “Checkbox” *обовязкове
-Type Radio
+**Type Radio**
 - Caption: { lang: string; value: string } [] це опис
 - Index: number *обовязкове
 - Property: ключ від інтерфейсу ноди string *обовязкове
 - $css: { wrapper: CSS string, caption: CSS string, svg: CSS string }
 - Type: “RadioButton” *обовязкове
 - Value: true | false *обовязкове
-Type Select
+**Type Select**
 - Caption: { lang: string; value: string } [] це опис 
 - Index: number *обовязкове
 - Property: ключ від інтерфейсу ноди string *обовязкове
