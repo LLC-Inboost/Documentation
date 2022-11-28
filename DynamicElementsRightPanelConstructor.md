@@ -15,7 +15,7 @@
 PROPERTIES [1]
 При передачі $css[key] той елемент для якого призначений key буде без дефолтних стилів а будуть вставленні стилі які будуть передані в це поле,
 Це повинен бути валідний css (напряму без селектора, наприклад $css: {wrappper: “display:flex;margin:50px;”})
-[https://www.w3schools.com/css/css_syntax.asp] (тут про css) \n
+[тут про css](https://www.w3schools.com/css/css_syntax.asp)
 ### **Type Container**
 - Index: number *обовязкове
 - Type:  “Container” *обовязкове
