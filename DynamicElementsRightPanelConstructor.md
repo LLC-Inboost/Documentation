@@ -12,7 +12,7 @@
 Якщо додати в конфіг ноди поле excludeDynamicElementsForAllNodes зі значенням true то всі елементи які мають type:”All”, не будуть показані в ноді
 
 
-### <a name="Properties"></a>
+### <a name="Properties"></a> Properties
 При передачі $css[key] той елемент для якого призначений key буде без дефолтних стилів а будуть вставленні стилі які будуть передані в це поле,
 Це повинен бути валідний css (напряму без селектора, наприклад $css: {wrappper: “display:flex;margin:50px;”})
 [тут про css](https://www.w3schools.com/css/css_syntax.asp)
