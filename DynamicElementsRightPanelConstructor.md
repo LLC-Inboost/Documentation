@@ -69,7 +69,155 @@
 
 ## Приклад двух контейнерів с вложеними пропеті
 ```json
-{"type":"All","accordions":[{"title":[{"lang":"UA","value":"Назва акордеона"}],"defaultOpen":true,"properties":[{"index":0,"maxLength":80,"type":"Container","$css":{"container":"display:flex;gap:16px;align-items:center;justify-content:center;padding-top:10px"},"innerElements":[{"caption":[{"lang":"UA","value":"Назва імпуту"}],"index":0,"property":"ke2k","type":"TextInput","placeholder":"custom placeholder"},{"caption":[{"lang":"UA","value":"Тайтл імпуту 1"}],"index":0,"property":"kek3","type":"TextInput","placeholder":"custom placeholder"}]},{"caption":[{"lang":"UA","value":"Назва імпуту"}],"index":0,"property":"k4ek","type":"TextInput","placeholder":"custom placeholder"}]},{"title":[{"lang":"UA","value":"Назва акордеона"}],"properties":[{"index":1,"type":"Container","$css":{"container":"display:flex;gap:6px;align-items:center;justify-content:center;padding-top:10px;"},"innerElements":[{"index":1,"property":"asdasd","type":"Checkbox"},{"caption":[{"lang":"UA","value":"Ключ"}],"index":2,"property":"ke12k","type":"TextInput","placeholder":"custom placeholder"},{"caption":[{"lang":"UA","value":"Значення"}],"index":3,"property":"kesd","type":"TextInput","$css":{"wrapper":"padding-left:10px;"}}]},{"index":1,"type":"Container","$css":{"container":"display:flex;gap:6px;align-items:center;justify-content:center;"},"innerElements":[{"index":1,"property":"asda223sd","type":"Checkbox"},{"caption":[{"lang":"UA","value":"Ключ"}],"index":2,"property":"keииии12k","type":"TextInput","placeholder":"custom placeholder"},{"caption":[{"lang":"UA","value":"Значення"}],"index":3,"property":"kxxcesd","type":"TextInput"}]}]}]}
+{
+    "type": "All",
+    "accordions": [
+        {
+            "title": [
+                {
+                    "lang": "UA",
+                    "value": "Назва акордеона"
+                }
+            ],
+            "defaultOpen": true,
+            "properties": [
+                {
+                    "index": 0,
+                    "maxLength": 80,
+                    "type": "Container",
+                    "$css": {
+                        "container": "display:flex;gap:16px;align-items:center;justify-content:center;padding-top:10px"
+                    },
+                    "innerElements": [
+                        {
+                            "caption": [
+                                {
+                                    "lang": "UA",
+                                    "value": "Назва імпуту"
+                                }
+                            ],
+                            "index": 0,
+                            "property": "ke2k",
+                            "type": "TextInput",
+                            "placeholder": "custom placeholder"
+                        },
+                        {
+                            "caption": [
+                                {
+                                    "lang": "UA",
+                                    "value": "Тайтл імпуту 1"
+                                }
+                            ],
+                            "index": 0,
+                            "property": "kek3",
+                            "type": "TextInput",
+                            "placeholder": "custom placeholder"
+                        }
+                    ]
+                },
+                {
+                    "caption": [
+                        {
+                            "lang": "UA",
+                            "value": "Назва імпуту"
+                        }
+                    ],
+                    "index": 0,
+                    "property": "k4ek",
+                    "type": "TextInput",
+                    "placeholder": "custom placeholder"
+                }
+            ]
+        },
+        {
+            "title": [
+                {
+                    "lang": "UA",
+                    "value": "Назва акордеона"
+                }
+            ],
+            "properties": [
+                {
+                    "index": 1,
+                    "type": "Container",
+                    "$css": {
+                        "container": "display:flex;gap:6px;align-items:center;justify-content:center;padding-top:10px;"
+                    },
+                    "innerElements": [
+                        {
+                            "index": 1,
+                            "property": "asdasd",
+                            "type": "Checkbox"
+                        },
+                        {
+                            "caption": [
+                                {
+                                    "lang": "UA",
+                                    "value": "Ключ"
+                                }
+                            ],
+                            "index": 2,
+                            "property": "ke12k",
+                            "type": "TextInput",
+                            "placeholder": "custom placeholder"
+                        },
+                        {
+                            "caption": [
+                                {
+                                    "lang": "UA",
+                                    "value": "Значення"
+                                }
+                            ],
+                            "index": 3,
+                            "property": "kesd",
+                            "type": "TextInput",
+                            "$css": {
+                                "wrapper": "padding-left:10px;"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "index": 1,
+                    "type": "Container",
+                    "$css": {
+                        "container": "display:flex;gap:6px;align-items:center;justify-content:center;"
+                    },
+                    "innerElements": [
+                        {
+                            "index": 1,
+                            "property": "asda223sd",
+                            "type": "Checkbox"
+                        },
+                        {
+                            "caption": [
+                                {
+                                    "lang": "UA",
+                                    "value": "Ключ"
+                                }
+                            ],
+                            "index": 2,
+                            "property": "keииии12k",
+                            "type": "TextInput",
+                            "placeholder": "custom placeholder"
+                        },
+                        {
+                            "caption": [
+                                {
+                                    "lang": "UA",
+                                    "value": "Значення"
+                                }
+                            ],
+                            "index": 3,
+                            "property": "kxxcesd",
+                            "type": "TextInput"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
 ```
 <img width="240" alt="Screenshot 2022-11-28 at 09 55 25" src="https://user-images.githubusercontent.com/74597949/204223465-4d11c7fe-89ea-4da5-a364-5a48a1cbdbfd.png">
 <img width="205" alt="Screenshot 2022-11-28 at 09 55 54" src="https://user-images.githubusercontent.com/74597949/204223552-a73a0752-af7d-46b0-97c7-f9b0ad4cee41.png">
