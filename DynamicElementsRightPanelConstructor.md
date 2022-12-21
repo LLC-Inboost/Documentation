@@ -17,6 +17,8 @@
 Це повинен бути валідний css (напряму без селектора, наприклад $css: {wrappper: “display:flex;margin:50px;”})
 [тут про css](https://www.w3schools.com/css/css_syntax.asp)
 
+[1]: "fromNode", "fromResponse", "default", "all"
+
 ### **Type Container**
 - Index: number *обовязкове
 - Type:  “Container” *обовязкове
@@ -32,6 +34,7 @@
 - $css: { wrapper: CSS string }
 - Placeholder: string
 - MultiLanguage: boolean (по дефолту true) чи буде записуватись значення в форматі {lang, value}[] чи просто string
+- IncludesVariables: [1], змінні для тексту
 ---
 ### **Type TextInput** 
 - Caption: { lang: string; value: string } [] це опис для текст ареї
@@ -42,6 +45,7 @@
 - $css: { wrapper: CSS string }
 - Placeholder: string
 - MultiLanguage: boolean (по дефолту false) чи буде записуватись значення в форматі {lang, value}[] чи просто string
+- IncludesVariables: [1], змінні для тексту
 ---
 ### **Type Checkbox**
 - Caption: { lang: string; value: string } [] це опис
