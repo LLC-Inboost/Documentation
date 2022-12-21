@@ -17,7 +17,11 @@
 Це повинен бути валідний css (напряму без селектора, наприклад $css: {wrappper: “display:flex;margin:50px;”})
 [тут про css](https://www.w3schools.com/css/css_syntax.asp)
 
-- [IncludesVariables] [1] "fromNode" - все що динамічно виймається з keyForSave, "fromResponse" те що прилітає с іншого беку в нодах інтеграцій, "default" те що прилітає с апішки, "all"
+- [IncludesVariables] [1] 
+    "fromNode" - все що динамічно виймається з keyForSave, /n
+     "fromResponse" те що прилітає с іншого беку в нодах інтеграцій, /n
+     "default" те що прилітає с апішки, /n
+     "all" /n
 
 ### **Type Container**
 - Index: number *обовязкове
