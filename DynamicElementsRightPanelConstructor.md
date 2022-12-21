@@ -18,10 +18,10 @@
 [тут про css](https://www.w3schools.com/css/css_syntax.asp)
 
 - [IncludesVariables] [1] 
-    "fromNode" - все що динамічно виймається з keyForSave, /n
-     "fromResponse" те що прилітає с іншого беку в нодах інтеграцій, /n
-     "default" те що прилітає с апішки, /n
-     "all" /n
+    "fromNode" - все що динамічно виймається з keyForSave, \n
+     "fromResponse" те що прилітає с іншого беку в нодах інтеграцій, \n
+     "default" те що прилітає с апішки, \n
+     "all" \n
 
 ### **Type Container**
 - Index: number *обовязкове
