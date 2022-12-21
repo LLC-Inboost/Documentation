@@ -17,8 +17,8 @@
 Це повинен бути валідний css (напряму без селектора, наприклад $css: {wrappper: “display:flex;margin:50px;”})
 [тут про css](https://www.w3schools.com/css/css_syntax.asp)
 
-- [IncludesVariables] [1] 
-    "fromNode" - все що динамічно виймається з keyForSave, <br/>
+- [IncludesVariables] [1] <br/>
+     "fromNode" - все що динамічно виймається з keyForSave, <br/>
      "fromResponse" те що прилітає с іншого беку в нодах інтеграцій, <br/>
      "default" те що прилітає с апішки, <br/>
      "all" <br/>
