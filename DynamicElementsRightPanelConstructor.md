@@ -17,7 +17,7 @@
 Це повинен бути валідний css (напряму без селектора, наприклад $css: {wrappper: “display:flex;margin:50px;”})
 [тут про css](https://www.w3schools.com/css/css_syntax.asp)
 
-- [IncludesVariables] [1] <br/>
+- [IncludesVariables][1] <br/>
      "fromNode" - все що динамічно виймається з keyForSave, <br/>
      "fromResponse" те що прилітає с іншого беку в нодах інтеграцій, <br/>
      "default" те що прилітає с апішки, <br/>
@@ -38,7 +38,7 @@
 - $css: { wrapper: CSS string }
 - Placeholder: string
 - MultiLanguage: boolean (по дефолту true) чи буде записуватись значення в форматі {lang, value}[] чи просто string
-- IncludesVariables: [1], змінні для тексту
+- IncludesVariables[1]: змінні для тексту, по дефолту "all"
 ---
 ### **Type TextInput** 
 - Caption: { lang: string; value: string } [] це опис для текст ареї
@@ -49,7 +49,7 @@
 - $css: { wrapper: CSS string }
 - Placeholder: string
 - MultiLanguage: boolean (по дефолту false) чи буде записуватись значення в форматі {lang, value}[] чи просто string
-- IncludesVariables: [1], змінні для тексту
+- IncludesVariables[1]: змінні для тексту, по дефолту "all"
 ---
 ### **Type Checkbox**
 - Caption: { lang: string; value: string } [] це опис
