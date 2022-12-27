@@ -28,6 +28,9 @@
 - Type:  “Container” *обовязкове
 - $css: { container: CSS string }
 - innerElements: [Properties](#Properties) *обовязкове (така сама структура тільки вложена)
+- entityParentPropertyLength: макс довжина масива в який будуть записуватись проперті з контейнера,
+- entityParentProperty: ключ в інтерфейсі ноди, якщо передати це поле то всі проперті вложені в контейнер станануть вложеним обєктом в масив с цим ключом,
+- entityParentTextToAddButton: MultiLanguageValue переклад для кнопки додавання сутності в масив entityParentProperty, по дефолту назва "entity add"
 ---
 ### **Type Text**
 - Caption: { lang: string; value: string } [] це опис для текст ареї
@@ -43,13 +46,14 @@
 ### **Type TextInput** 
 - Caption: { lang: string; value: string } [] це опис для текст ареї
 - Index: number *обовязкове
-- Property: ключ від інтерфейсу ноди  { lang: string; value: string }[] *обовязкове
+- Property: ключ від інтерфейсу ноди  *обовязкове
 - Type:  “TextInput” *обовязкове
 - Maxlength: макс довжина тексту в одному об’єкті {lang, value <— цього поля}
 - $css: { wrapper: CSS string }
 - Placeholder: string
 - MultiLanguage: boolean (по дефолту false) чи буде записуватись значення в форматі {lang, value}[] чи просто string
 - IncludesVariables[1]: змінні для тексту, по дефолту "all"
+- TextInputType: "arrayModel" Якщо передати це поле то створиться інпут с кнопкою який буде записувати масив строк в поле property,
 ---
 ### **Type Checkbox**
 - Caption: { lang: string; value: string } [] це опис
