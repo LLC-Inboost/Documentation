@@ -27,10 +27,10 @@
 - Index: number *обовязкове
 - Type:  “Container” *обовязкове
 - $css: { container: CSS string }
-- innerElements: [Properties](#Properties) *обовязкове (така сама структура тільки вложена)
-- entityParentPropertyLength: макс довжина масива в який будуть записуватись проперті з контейнера,
-- entityParentProperty: ключ в інтерфейсі ноди, якщо передати це поле то всі проперті вложені в контейнер станануть вложеним обєктом в масив с цим ключом,
-- entityParentTextToAddButton: MultiLanguageValue переклад для кнопки додавання сутності в масив entityParentProperty, по дефолту назва "entity add"
+- InnerElements: [Properties](#Properties) *обовязкове (така сама структура тільки вложена)
+- EntityParentPropertyLength: макс довжина масива в який будуть записуватись проперті з контейнера,
+- EntityParentProperty: ключ в інтерфейсі ноди, якщо передати це поле то всі проперті вложені в контейнер станануть вложеним обєктом в масив с цим ключом,
+- EntityParentTextToAddButton: MultiLanguageValue переклад для кнопки додавання сутності в масив entityParentProperty, по дефолту назва "entity add"
 ---
 ### **Type Text**
 - Caption: { lang: string; value: string } [] це опис для текст ареї
