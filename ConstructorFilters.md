@@ -9,7 +9,7 @@
 
 ```ts
 // Модель аккордеону
-property?: string; // Поле в яке буде акумулюватись значення
+property: string; // Поле в яке буде акумулюватись значення
 caption: MultiLanguageValue[]; // Опис для аккордеону
 type: EConstructorFilterType; // Тип фільтру
 listForSelect?: SelectOptionData[];
