@@ -11,11 +11,11 @@
 // Модель аккордеону
 property?: string; // Поле в яке буде акумулюватись значення
 caption: MultiLanguageValue[]; // Опис для аккордеону
-type: EDynamicFilterType; // Тип фільтру
+type: EConstructorFilterType; // Тип фільтру
 listForSelect?: SelectOptionData[];
 id: string;
 
-enum EDynamicFilterType {
+enum EConstructorFilterType {
     "stringArray",
     "dateRage",
     "selectMulti",
