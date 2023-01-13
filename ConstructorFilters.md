@@ -16,21 +16,21 @@ listForSelect?: SelectOptionData[];
 id: string;
 
 enum EDynamicFilterType {
-    stringArray = "stringArray",
-    dateRange = "dateRage",
-    selectMulti = "selectMulti",
-    selectSingle = "selectSingle",
-    selectMultiOnly = "selectMultiOnly",
-    selectSingleOnly = "selectSingleOnly",
-    fields = "fields",
+    "stringArray",
+    "dateRage",
+    "selectMulti",
+    "selectSingle",
+    "selectMultiOnly",
+    "selectSingleOnly",
+    "fields",
 }
 
 enum ELogicOperatorConstructorFilters {
-    "equal" = "equal",
-    "notEqual" = "notEqual",
-    "contains" = "contains",
-    "notContains" = "notContains",
-    "filled" = "filled",
-    "notFilled" = "notFilled",
+    "equal",
+    "notEqual",
+    "contains",
+    "notContains",
+    "filled",
+    "notFilled",
 }
 ```
