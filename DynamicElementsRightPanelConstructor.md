@@ -231,7 +231,8 @@
         }
     ]
 }
-
+```
+```ts
 // work with EntityParentSingle type Container
 {
      title: [{ lang: Languages.UA, value: "Назва акордеона" }],
