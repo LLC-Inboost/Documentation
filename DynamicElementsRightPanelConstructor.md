@@ -28,7 +28,8 @@
 - Type:  “Container” *обовязкове
 - $css: { container: CSS string }
 - InnerElements: [Properties](#Properties) *обовязкове (така сама структура тільки вложена)
-- EntityParentPropertyLength: макс довжина масива в який будуть записуватись проперті з контейнера,
+- EntityParentPropertyLength: number, макс довжина масива в який будуть записуватись проперті з контейнера
+- EntityParentSingle: boolean, чи буде контейнер з EntityParentProperty працювати з обєктом чи з масивом обєктів
 - EntityParentProperty: ключ в інтерфейсі ноди, якщо передати це поле то всі проперті вложені в контейнер станануть вложеним обєктом в масив с цим ключом,
 - EntityParentTextToAddButton: MultiLanguageValue переклад для кнопки додавання сутності в масив entityParentProperty, по дефолту назва "entity add"
 ---
@@ -230,6 +231,48 @@
         }
     ]
 }
+
+// work with EntityParentSingle type Container
+{
+     title: [{ lang: Languages.UA, value: "Назва акордеона" }],
+     defaultOpen: true,
+     properties: [
+         {
+             index: 0,
+             maxLength: 80,
+             type: ERightPanelPropertyType.container,
+             entityParentProperty: "mock" as keyof DialogNode,
+             entityParentSingle: true,
+             entityParentTextToAddButton: [{ lang: "UA", value: "Custom btn name" }],
+             $css: {
+                 container:
+                     "display:flex;gap:16px;align-items:center;justify-content:flex-start;padding-top:10px;",
+             },
+             innerElements: [
+                 {
+                     index: 1,
+                     property: "asda223sd",
+                     type: ERightPanelPropertyType.checkbox,
+                 },
+                 {
+                     caption: [{ lang: Languages.UA, value: "Ключ" }],
+                     index: 2,
+                     property: "keииии12k",
+                     type: ERightPanelPropertyType.textInput,
+                     $css: { wrapper: "width:100%" },
+                     placeholder: "custom placeholder",
+                 },
+                 {
+                     caption: [{ lang: Languages.UA, value: "Значення" }],
+                     index: 3,
+                     property: "kxxcesd",
+                     $css: { wrapper: "width:100%" },
+                     type: ERightPanelPropertyType.textInput,
+                 },
+             ],
+         },
+     ],
+ },
 ```
 <img width="240" alt="Screenshot 2022-11-28 at 09 55 25" src="https://user-images.githubusercontent.com/74597949/204223465-4d11c7fe-89ea-4da5-a364-5a48a1cbdbfd.png">
 <img width="205" alt="Screenshot 2022-11-28 at 09 55 54" src="https://user-images.githubusercontent.com/74597949/204223552-a73a0752-af7d-46b0-97c7-f9b0ad4cee41.png">
