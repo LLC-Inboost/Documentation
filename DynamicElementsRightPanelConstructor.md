@@ -232,6 +232,10 @@
     ]
 }
 ```
+
+<img width="240" alt="Screenshot 2022-11-28 at 09 55 25" src="https://user-images.githubusercontent.com/74597949/204223465-4d11c7fe-89ea-4da5-a364-5a48a1cbdbfd.png">
+<img width="205" alt="Screenshot 2022-11-28 at 09 55 54" src="https://user-images.githubusercontent.com/74597949/204223552-a73a0752-af7d-46b0-97c7-f9b0ad4cee41.png">
+
 #### Приклад контейнеру з EntityParentSingle
 ```ts
 {
@@ -273,5 +277,5 @@
      ],
  },
 ```
-<img width="240" alt="Screenshot 2022-11-28 at 09 55 25" src="https://user-images.githubusercontent.com/74597949/204223465-4d11c7fe-89ea-4da5-a364-5a48a1cbdbfd.png">
-<img width="205" alt="Screenshot 2022-11-28 at 09 55 54" src="https://user-images.githubusercontent.com/74597949/204223552-a73a0752-af7d-46b0-97c7-f9b0ad4cee41.png">
+<img width="803" alt="Screenshot 2023-01-19 at 14 38 01" src="https://user-images.githubusercontent.com/74597949/213444855-bb438d1d-7a2b-4341-b08b-12a0f5440d5a.png">
+
