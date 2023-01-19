@@ -239,8 +239,6 @@
      defaultOpen: true,
      properties: [
          {
-             index: 0,
-             maxLength: 80,
              type: ERightPanelPropertyType.container,
              entityParentProperty: "mock" as keyof DialogNode,
              entityParentSingle: true,
