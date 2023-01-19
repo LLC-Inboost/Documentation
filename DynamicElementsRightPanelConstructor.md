@@ -80,7 +80,7 @@
 - SelectType: “single” | “multi” | "searchMulti" | "searchSingle" в залежності від цього типу будуть свг-шки в оціях або радіо або чекбокс *обовязкове і записуватись в проперті або один елемент або масив елементів
 - List: {label:string, value: any}[] список с опціями для селекту *обовязкове
 
-## Приклад двух контейнерів с вложеними пропеті
+#### Приклад двух контейнерів с вложеними пропеті
 ```json
 {
     "type": "All",
@@ -232,8 +232,8 @@
     ]
 }
 ```
+#### Приклад контейнеру з EntityParentSingle
 ```ts
-// work with EntityParentSingle type Container
 {
      title: [{ lang: Languages.UA, value: "Назва акордеона" }],
      defaultOpen: true,
