@@ -56,6 +56,8 @@ enum ELogicOperatorConstructorFilters {
     type: EDynamicFilterType.stringArray,
     id: "test_id",
 }
+
+// в АПІ попаде модель Filter: [{property: "UserPhoneNumber", filterValue: "value, value...", opr: ELogicOperatorConstructorFilters}]
 ```
  <img width="395" alt="Screenshot 2023-01-20 at 12 02 04" src="https://user-images.githubusercontent.com/74597949/213668623-373e62e5-a258-4efa-8eb2-a2b512ef59d4.png">
  
@@ -66,10 +68,10 @@ enum ELogicOperatorConstructorFilters {
     type: EDynamicFilterType.dateRange,
     id: "test_id2",
 }
+
+// в АПІ попаде модель Filter: [{property: "dates", filterValue: "YYYY-MM-DD, YYYY-MM-DD", opr: ELogicOperatorConstructorFilters}]
 ```
  <img width="395" alt="Screenshot 2023-01-20 at 12 02 09" src="https://user-images.githubusercontent.com/74597949/213668674-622dc398-7ae9-4bd1-a1e7-47b005b7bf93.png">
- 
-  
  
 ```ts
 {
@@ -77,6 +79,8 @@ enum ELogicOperatorConstructorFilters {
     type: EDynamicFilterType.fields,
     id: "test_id3",
 }
+
+// в АПІ попаде модель Filter: [{property: тут проп який юзер вибере з селекту (колонки з універсального АПІ), filterValue: string[], opr: ELogicOperatorConstructorFilters}]
 ```
 
  <img width="395" alt="Screenshot 2023-01-20 at 12 02 24" src="https://user-images.githubusercontent.com/74597949/213668844-984443b7-fd58-4765-a745-14dca9407200.png">
@@ -93,6 +97,7 @@ enum ELogicOperatorConstructorFilters {
     ],
     id: "test_id4",
 }
+// в АПІ попаде модель Filter: [{property: "selectMulti", filterValue: "value, value...", opr: ELogicOperatorConstructorFilters}]
 ```
 
 <img width="395" alt="Screenshot 2023-01-20 at 12 02 31" src="https://user-images.githubusercontent.com/74597949/213668888-add2d6fd-56df-4d4a-a712-7659614b8e26.png">
@@ -108,6 +113,8 @@ enum ELogicOperatorConstructorFilters {
     ],
     id: "test_id5",
 }
+
+// в АПІ попаде модель Filter: [{property: "selectSingle", filterValue: string, opr: ELogicOperatorConstructorFilters}]
 ```
 
    <img width="395" alt="Screenshot 2023-01-20 at 12 02 38" src="https://user-images.githubusercontent.com/74597949/213668930-0e4be0f2-8ae0-497e-9b81-1a55c4037c5e.png">
@@ -123,6 +130,8 @@ enum ELogicOperatorConstructorFilters {
     ],
     id: "test_id6",
 }
+
+// в АПІ попаде модель Filter: [{property: "selectMultiOnly", filterValue: "value, value...", opr: ELogicOperatorConstructorFilters}]
 ```
 
  <img width="395" alt="Screenshot 2023-01-20 at 12 02 54" src="https://user-images.githubusercontent.com/74597949/213668999-54955405-9fd5-4f77-a306-8e24a2d9af47.png">
@@ -138,6 +147,8 @@ enum ELogicOperatorConstructorFilters {
     ],
     id: "test_id7",
 }
+
+// в АПІ попаде модель Filter: [{property: "selectSingleOnly", filterValue: string, opr: ELogicOperatorConstructorFilters}]
 ```
 
  <img width="395" alt="Screenshot 2023-01-20 at 12 02 57" src="https://user-images.githubusercontent.com/74597949/213669044-5f0a2e67-c39b-4513-ab2d-5d3adccabbfc.png">
