@@ -53,7 +53,7 @@ enum ELogicOperatorConstructorFilters {
 {
     caption: [{ lang: Languages.UA, value: "stringArray" }],
     property: "UserPhoneNumber",
-    type: EDynamicFilterType.stringArray,
+    type: EConstructorFilterType.stringArray,
     id: "test_id",
 }
 
@@ -65,7 +65,7 @@ enum ELogicOperatorConstructorFilters {
 {
     caption: [{ lang: Languages.UA, value: "datepicker" }],
     property: "dates",
-    type: EDynamicFilterType.dateRange,
+    type: EConstructorFilterType.dateRange,
     id: "test_id2",
 }
 
@@ -76,7 +76,7 @@ enum ELogicOperatorConstructorFilters {
 ```ts
 {
     caption: [{ lang: Languages.UA, value: "fields" }],
-    type: EDynamicFilterType.fields,
+    type: EConstructorFilterType.fields,
     id: "test_id3",
 }
 
@@ -89,7 +89,7 @@ enum ELogicOperatorConstructorFilters {
 ```ts
 {
     caption: [{ lang: Languages.UA, value: "selectMulti" }],
-    type: EDynamicFilterType.selectMulti,
+    type: EConstructorFilterType.selectMulti,
     property: "selectMulti",
     listForSelect: [
         { label: "xx", value: "xx" },
@@ -105,7 +105,7 @@ enum ELogicOperatorConstructorFilters {
 ```ts
 {
     caption: [{ lang: Languages.UA, value: "selectSingle" }],
-    type: EDynamicFilterType.selectSingle,
+    type: EConstructorFilterType.selectSingle,
     property: "selectSingle",
     listForSelect: [
         { label: "xx", value: "xx" },
@@ -122,7 +122,7 @@ enum ELogicOperatorConstructorFilters {
 ```ts
 {
     caption: [{ lang: Languages.UA, value: "selectMultiOnly" }],
-    type: EDynamicFilterType.selectMultiOnly,
+    type: EConstructorFilterType.selectMultiOnly,
     property: "selectMultiOnly",
     listForSelect: [
         { label: "xx", value: "xx" },
@@ -139,7 +139,7 @@ enum ELogicOperatorConstructorFilters {
 ```ts
 {
     caption: [{ lang: Languages.UA, value: "selectSingleOnly" }],
-    type: EDynamicFilterType.selectSingleOnly,
+    type: EConstructorFilterType.selectSingleOnly,
     property: "selectSingleOnly",
     listForSelect: [
         { label: "xx", value: "xx" },
