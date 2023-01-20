@@ -9,12 +9,14 @@
 
 ```ts
 // Модель аккордеону
-property?: string; // key to fill filter
-caption: MultiLanguageValue[]; // label for accordion
-type: EDynamicFilterType;
-listForSelect?: SelectOptionData[];
-accumulator?: Record<string, unknown> | Record<string, unknown>[];
-id: string;
+{
+    property?: string; // key to fill filter
+    caption: MultiLanguageValue[]; // label for accordion
+    type: EDynamicFilterType;
+    listForSelect?: SelectOptionData[];
+    accumulator?: Record<string, unknown> | Record<string, unknown>[];
+    id: string;
+}
 
 enum EConstructorFilterType {
     "stringArray",
