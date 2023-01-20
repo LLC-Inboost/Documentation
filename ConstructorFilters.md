@@ -8,8 +8,8 @@
 ## API
 
 ```ts
-// Модель аккордеону
-{
+// Модель аккордеонуi
+interface IConstructorAccordion {
     property?: string; // key to fill filter
     caption: MultiLanguageValue[]; // label for accordion
     type: EDynamicFilterType;
