@@ -17,8 +17,17 @@ interface IConstructorAccordion {
     accumulator?: Record<string, unknown> | Record<string, unknown>[];
     id: string;
     apiForSelect?: string;
+    apiForSelectSchema?: ApiForSelectSchema;
+    apiForSelectMethod?: "get" | "post";
+    apiForSelectLangTo?: "query" | "body";
+    apiForSelectKeyForResponseArray?: string;
 }
 
+interface ApiForSelectSchema {
+    label: string;
+    value: string;
+}   
+ 
 enum EConstructorFilterType {
     "stringArray",
     "dateRage",
@@ -44,11 +53,34 @@ enum ELogicOperatorConstructorFilters {
     NotIn = 12,
     StartWith = 100,
 }
-
-// При передачі apiForSelect разом с selectSingle | selectMulti | selectMultiOnly | selectSingleOnly
-// очікувана модель { label:string; value:any }[]
-// Наприклад: apiForSelect = "getMyDictionary", буде зроблений GET запит на api/getMyDictionary і сет в селект з response.data
 ```
+
+### Динамічні значення в селект з апі
+**apiForSelect**
+При передачі apiForSelect разом с selectSingle | selectMulti | selectMultiOnly | selectSingleOnly
+очікувана модель { label:string; value:any }[]
+Наприклад: apiForSelect = "getMyDictionary", буде зроблений Post запит на api/getMyDictionary і сет в селект з response.data
+
+**apiForSelectSchema**
+Якщо у вас кастомна модель з апі і її необхідно промапити то передається схема
+Наприклад апі вертає модель [{ Id: 12, CustomValue: "test" }]
+Вказується схема { label: "CustomValue", value: "Id"}
+І потім в селекті буде відповідно все відображатись з лейблом від ключа CustomValue і значенням Id
+
+**apiForSelectMethod**
+Запит на довідник буде через GET або POST 
+По дефолту POST
+
+**apiForSelectLangTo**
+Передача мови до квері або боді
+Якщо боді це поле { Lang: "UA" } (тому що так в універсальному апі)
+Якщо квері це поле ?lang="UA"
+По дефолту боді
+
+**apiForSelectKeyForResponseArray**
+Якщо данні для селекту не одразу в response.data а в кастомному полі
+Наприклад сервер повертає { totalCount: 12, entites: [{label, value}] }
+Вказуєш apiForSelectKeyForResponseArray: "entites", і я буду знати що потрібно брати звідти данні
 
 ### Приклад конструктору
 ```ts
