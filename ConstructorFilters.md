@@ -46,7 +46,7 @@ enum ELogicOperatorConstructorFilters {
 }
 
 // При передачі apiForSelect разом с selectSingle | selectMulti | selectMultiOnly | selectSingleOnly
-// буде зроблений запит на той ендпоінт очікувана модель { label:string; value:any }[]
+// очікувана модель { label:string; value:any }[]
 // Наприклад: apiForSelect = "getMyDictionary", буде зроблений GET запит на api/getMyDictionary і сет в селект з response.data
 ```
 
