@@ -21,6 +21,7 @@ interface IConstructorAccordion {
     apiForSelectMethod?: "get" | "post";
     apiForSelectLangTo?: "query" | "body";
     apiForSelectKeyForResponseArray?: string;
+    logicOperator?: ELogicOperatorConstructorFilters; // якщо аккордеон без вибору логічних операторів передається це поле і в апі буде поле opr с відповідним числом
 }
 
 interface ApiForSelectSchema {
