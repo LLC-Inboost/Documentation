@@ -56,12 +56,12 @@ enum ELogicOperatorConstructorFilters {
 ```
 
 ### Динамічні значення в селект з апі
-**apiForSelect**
+**apiForSelect** \n
 При передачі apiForSelect разом с selectSingle | selectMulti | selectMultiOnly | selectSingleOnly
 очікувана модель { label:string; value:any }[]
 Наприклад: apiForSelect = "getMyDictionary", буде зроблений Post запит на api/getMyDictionary і сет в селект з response.data
 
-**apiForSelectSchema**
+**apiForSelectSchema** \n
 Якщо у вас кастомна модель з апі і її необхідно промапити то передається схема
 Наприклад апі вертає модель [{ Id: 12, CustomValue: "test" }]
 Вказується схема { label: "CustomValue", value: "Id"}
@@ -71,13 +71,13 @@ enum ELogicOperatorConstructorFilters {
 Запит на довідник буде через GET або POST 
 По дефолту POST
 
-**apiForSelectLangTo**
+**apiForSelectLangTo** \n
 Передача мови до квері або боді
 Якщо боді це поле { Lang: "UA" } (тому що так в універсальному апі)
 Якщо квері це поле ?lang="UA"
 По дефолту боді
 
-**apiForSelectKeyForResponseArray**
+**apiForSelectKeyForResponseArray** \n
 Якщо данні для селекту не одразу в response.data а в кастомному полі
 Наприклад сервер повертає { totalCount: 12, entites: [{label, value}] }
 Вказуєш apiForSelectKeyForResponseArray: "entites", і я буду знати що потрібно брати звідти данні
