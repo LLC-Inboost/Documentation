@@ -16,6 +16,7 @@ interface IConstructorAccordion {
     listForSelect?: SelectOptionData[];
     accumulator?: Record<string, unknown> | Record<string, unknown>[];
     id: string;
+    apiForSelect?: string;
 }
 
 enum EConstructorFilterType {
@@ -43,6 +44,10 @@ enum ELogicOperatorConstructorFilters {
     NotIn = 12,
     StartWith = 100,
 }
+
+// При передачі apiForSelect разом с selectSingle | selectMulti | selectMultiOnly | selectSingleOnly
+// буде зроблений запит на той ендпоінт очікувана модель { label:string; value:any }[]
+// Наприклад: apiForSelect = "getMyDictionary", буде зроблений GET запит на api/getMyDictionary і сет в селект з response.data
 ```
 
 ### Приклад конструктору
