@@ -83,6 +83,31 @@ enum ELogicOperatorConstructorFilters {
 Наприклад сервер повертає { totalCount: 12, entites: [{label, value}] }
 Вказуєш apiForSelectKeyForResponseArray: "entites", і я буду знати що потрібно брати звідти данні
 
+```json
+// приклад аккордеону для селекту
+{
+   caption: [
+       {
+           lang: "UA",
+           value: "Статус",
+       },
+       {
+           lang: "EN",
+           value: "Status",
+       },
+   ],
+   property: "status",
+   type: "selectSingle",
+   id: "filter_id6",
+   apiForSelect: "/wapi/BotActivityStatusDic",
+   apiForSelectMethod: "post",
+   apiForSelectLangTo: "body",
+   apiForSelectKeyForResponseArray: "data",
+   apiForSelectSchema: { label: "Value", value: "IdStatusActivity" },
+   logicOperator: 1,
+},
+```
+
 ### Приклад конструктору
 ```ts
 // Ключ виступає роутом для сторінки
