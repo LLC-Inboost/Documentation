@@ -84,28 +84,7 @@ enum ELogicOperatorConstructorFilters {
 Вказуєш apiForSelectKeyForResponseArray: "entites", і я буду знати що потрібно брати звідти данні
 
 ```json
-// приклад аккордеону для селекту
-{
-   caption: [
-       {
-           lang: "UA",
-           value: "Статус",
-       },
-       {
-           lang: "EN",
-           value: "Status",
-       },
-   ],
-   property: "status",
-   type: "selectSingle",
-   id: "filter_id6",
-   apiForSelect: "/wapi/BotActivityStatusDic",
-   apiForSelectMethod: "post",
-   apiForSelectLangTo: "body",
-   apiForSelectKeyForResponseArray: "data",
-   apiForSelectSchema: { label: "Value", value: "IdStatusActivity" },
-   logicOperator: 1,
-},
+// приклад аккордеону для селекту"{\n    \"caption\": [\n        {\n            \"lang\": \"UA\",\n            \"value\": \"Статус\"\n        },\n        {\n            \"lang\": \"EN\",\n            \"value\": \"Status\"\n        }\n    ],\n    \"property\": \"status\",\n    \"type\": \"selectSingle\",\n    \"id\": \"filter_id6\",\n    \"apiForSelect\": \"/wapi/BotActivityStatusDic\",\n    \"apiForSelectMethod\": \"post\",\n    \"apiForSelectLangTo\": \"body\",\n    \"apiForSelectKeyForResponseArray\": \"data\",\n    \"apiForSelectSchema\": {\n        \"label\": \"Value\",\n        \"value\": \"IdStatusActivity\"\n    },\n    \"logicOperator\": 1\n}"
 ```
 
 ### Приклад конструктору
