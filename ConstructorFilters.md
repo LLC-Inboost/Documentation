@@ -108,6 +108,8 @@ enum ELogicOperatorConstructorFilters {
 }
 ```
 
+---
+
 ### Приклад конструктору
 ```ts
 // Ключ виступає роутом для сторінки
