@@ -106,12 +106,12 @@ enum ELogicOperatorConstructorFilters {
     "apiForSelect": "/wapi/GendersDic",
     "apiForSelectMethod": "post",
     "apiForSelectBody": {
-        "Lang": "UA",
+        "Lang": "UA", // це буде динамічно підмінено
         "Filters": [
             {
                 "property": "Lang",
                 "opr": "Equals",
-                "filterValue": "UA",
+                "filterValue": "UA", // це буде динамічно підмінено
             },
         ],
     },
