@@ -84,7 +84,7 @@ enum ELogicOperatorConstructorFilters {
 Наприклад сервер повертає { totalCount: 12, entites: [{label, value}] }
 Вказуєш apiForSelectKeyForResponseArray: "entites", і я буду знати що потрібно брати звідти данні
 
-Реалізована тинамічна підміна ленгу для query та body якщо в них на будь якій глибіні найдеться ключ (lang|language) регістр не має значення
+Реалізована динамічна підміна ленгу для query та body якщо в них на будь якій глибіні найдеться ключ (lang|language) регістр не має значення
 Або (UA|RU|EN) в значенні то автоматично підставиться мова інтерфейсу
 
 ```json
