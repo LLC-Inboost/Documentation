@@ -87,26 +87,35 @@ enum ELogicOperatorConstructorFilters {
 ```json
 // приклад аккордеону для селекту
 {
-    "caption": [
-       {
-           "lang": "UA",
-           "value": "Статус",
-       },
-       {
-           "lang": "EN",
-           "value": "Status",
-       },
-   ],
-   "property": "status",
-   "type": "selectSingle",
-   "id": "filter_id6",
-   "apiForSelect": "/wapi/BotActivityStatusDic",
-   "apiForSelectMethod": "post",
-   "apiForSelectLangTo": "body",
-   "apiForSelectKeyForResponseArray": "data",
-   "apiForSelectSchema": { "label": "Value", "value": "IdStatusActivity" },
-   "logicOperator": 1
-}
+    "сaption": [
+        {
+            "lang": "UA",
+            "value": "Стать",
+        },
+        {
+            "lang": "EN",
+            "value": "Gender",
+        },
+    ],
+    "property": "IdSex",
+    "type": "selectSingle",
+    "id": "filter_id5",
+    "apiForSelect": "/wapi/GendersDic",
+    "apiForSelectMethod": "post",
+    "apiForSelectBody": {
+        "Lang": "UA",
+        "Filters": [
+            {
+                "property": "Lang",
+                "opr": "Equals",
+                "filterValue": "UA",
+            },
+        ],
+    },
+    "apiForSelectKeyForResponseArray": "data",
+    "apiForSelectSchema": { "label": "FullValue", "value": "IdSex" },
+    "logicOperator": 1,
+},
 ```
 
 ---
