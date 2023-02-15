@@ -19,7 +19,8 @@ interface IConstructorAccordion {
     apiForSelect?: string;
     apiForSelectSchema?: ApiForSelectSchema;
     apiForSelectMethod?: "get" | "post";
-    apiForSelectLangTo?: "query" | "body";
+    apiForSelectBody?: Record<string, unknown>;
+    apiForSelectQuery?: string;
     apiForSelectKeyForResponseArray?: string;
     logicOperator?: ELogicOperatorConstructorFilters; // якщо аккордеон без вибору логічних операторів передається це поле і в апі буде поле opr с відповідним числом
 }
@@ -72,11 +73,11 @@ enum ELogicOperatorConstructorFilters {
 Запит на довідник буде через GET або POST 
 По дефолту POST
 
-**apiForSelectLangTo** <br/>
-Передача мови до квері або боді
-Якщо боді це поле { Lang: "UA" } (тому що так в універсальному апі)
-Якщо квері це поле ?lang="UA"
-По дефолту боді
+**apiForSelectBody** <br/>
+[body](https://developer.mozilla.org/en-US/docs/Web/API/Request/body) для апі
+
+**apiForSelectQuery** <br/>
+[query](https://en.wikipedia.org/wiki/Query_string) для апі
 
 **apiForSelectKeyForResponseArray** <br/>
 Якщо данні для селекту не одразу в response.data а в кастомному полі
