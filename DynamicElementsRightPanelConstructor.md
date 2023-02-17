@@ -3,6 +3,7 @@
 *Всі поля очікую с маленької букви
 
 ## **ACCORDIONS**
+- Type: string | string[]
 - Title: { lang: string; value: string } [] *обовязкове
 - DefaultOpen: boolean чи буде відкритий аккордеон одразу
 - [Properties](#Properties)
