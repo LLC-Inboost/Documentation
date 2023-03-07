@@ -32,7 +32,8 @@
 - EntityParentPropertyLength: number, макс довжина масива в який будуть записуватись проперті з контейнера
 - EntityParentSingle: boolean, чи буде контейнер з EntityParentProperty працювати з обєктом чи з масивом обєктів
 - EntityParentProperty: ключ в інтерфейсі ноди, якщо передати це поле то всі проперті вложені в контейнер станануть вложеним обєктом в масив с цим ключом,
-- EntityParentTextToAddButton: MultiLanguageValue переклад для кнопки додавання сутності в масив entityParentProperty, по дефолту назва "entity add"
+- EntityParentTextToAddButton: MultiLanguageValue[] переклад для кнопки додавання сутності в масив entityParentProperty, по дефолту назва "entity add"
+- EntityParentDeleteCaption: MultiLanguageValue[]  переклад для кнопки видалення сутності в масив entityParentProperty, по дефолту назва "entity delete";
 ---
 ### **Type Text**
 - Caption: { lang: string; value: string } [] це опис для текст ареї
