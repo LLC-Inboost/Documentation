@@ -62,7 +62,7 @@
 - Caption: { lang: string; value: string } [] це опис для текст ареї
 - Index: number *обовязкове
 - Property: ключ від інтерфейсу ноди  *обовязкове
-- Type:  “TextInput” *обовязкове
+- Type:  “NumberInput” *обовязкове
 - Maxlength: макс довжина тексту в одному об’єкті {lang, value <— цього поля}
 - $css: { wrapper: CSS string }
 - Placeholder: string
