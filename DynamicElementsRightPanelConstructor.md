@@ -58,6 +58,18 @@
 - IncludesVariables[1]: змінні для тексту, по дефолту "all"
 - TextInputType: "arrayModel" Якщо передати це поле то створиться інпут с кнопкою який буде записувати масив строк в поле property,
 ---
+### **Type NumberInput**
+- Caption: { lang: string; value: string } [] це опис для текст ареї
+- Index: number *обовязкове
+- Property: ключ від інтерфейсу ноди  *обовязкове
+- Type:  “TextInput” *обовязкове
+- Maxlength: макс довжина тексту в одному об’єкті {lang, value <— цього поля}
+- $css: { wrapper: CSS string }
+- Placeholder: string
+- MultiLanguage: boolean (по дефолту false) чи буде записуватись значення в форматі {lang, value}[] чи просто string
+- IncludesVariables[1]: змінні для тексту, по дефолту "all"
+- withVariableMode: boolean чи показувати 3 точки в інпуті для селекту з змінними, і якщо там то в модель записується тип намбер якщо ти вводиш сам, та стрінг якщо змінну наприклад: '{{UserPhoneNumber}}'
+---
 ### **Type Checkbox**
 - Caption: { lang: string; value: string } [] це опис
 - Index: number *обовязкове
@@ -81,6 +93,7 @@
 - Type: “Select” *обовязкове
 - SelectType: “single” | “multi” | "searchMulti" | "searchSingle" в залежності від цього типу будуть свг-шки в оціях або радіо або чекбокс *обовязкове і записуватись в проперті або один елемент або масив елементів
 - List: {label:string, value: any}[] список с опціями для селекту *обовязкове
+
 
 #### Приклад двух контейнерів с вложеними пропеті
 ```json
