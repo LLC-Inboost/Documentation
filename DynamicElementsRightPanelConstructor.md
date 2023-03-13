@@ -68,7 +68,7 @@
 - Placeholder: string
 - MultiLanguage: boolean (по дефолту false) чи буде записуватись значення в форматі {lang, value}[] чи просто string
 - IncludesVariables[1]: змінні для тексту, по дефолту "all"
-- withVariableMode: boolean чи показувати 3 точки в інпуті для селекту з змінними, і якщо там то в модель записується тип намбер якщо ти вводиш сам, та стрінг якщо змінну наприклад: '{{UserPhoneNumber}}'
+- WithVariableMode: boolean чи показувати 3 точки в інпуті для селекту з змінними,в модель записується тип намбер якщо ти вводиш сам, та стрінг якщо змінну наприклад: '{{UserPhoneNumber}}' (по дефолту true)
 ---
 ### **Type Checkbox**
 - Caption: { lang: string; value: string } [] це опис
