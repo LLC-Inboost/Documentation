@@ -6,17 +6,28 @@
 - Type: string | string[]
 - Title: { lang: string; value: string } [] *обовязкове
 - DefaultOpen: boolean чи буде відкритий аккордеон одразу
+- IdAccordion: string; обов'язкове
 - [Properties](#Properties)
 
 Якщо додати в джейсон таку саму модель що і для конкретної ноди але с type: “All”, ці елементи будуть у всіх нодах
 
 Якщо додати в конфіг ноди поле excludeDynamicElementsForAllNodes зі значенням true то всі елементи які мають type:”All”, не будуть показані в ноді
 
-
 ## <a name="Properties"></a> Properties
 При передачі $css[key] той елемент для якого призначений key буде без дефолтних стилів а будуть вставленні стилі які будуть передані в це поле,
 Це повинен бути валідний css (напряму без селектора, наприклад $css: {wrappper: “display:flex;margin:50px;”})
 [тут про css](https://www.w3schools.com/css/css_syntax.asp)
+
+**В кожної проперті обовязкове поле idProperty**
+
+--- 
+**new**
+Якщо передати в json поля   
+// передавати в тому json в якому не type: all 
+excludeProperty: string[]; // idAccordion | idProperty можна виключити з аккордеону якісь проперті або приховати цілий аккордеон
+     
+override: DynamicElementsOverride[]; // тут проперті яке буде перезаписано аналогічна модель(#Properties) тільки + idOverride що = або idAccordion, або idProperty, це дозволить перезаписати щось с type: all іншим проперті
+---
 
 - [IncludesVariables][1] string[] <br/>
      "fromNode" - все що динамічно виймається з keyForSave, <br/>
