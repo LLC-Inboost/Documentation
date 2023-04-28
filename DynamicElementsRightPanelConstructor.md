@@ -21,11 +21,9 @@
 **В кожної проперті обовязкове поле idProperty**
 
 **new**
-Якщо передати в json поля   
-// передавати в тому json в якому не type: all 
-excludeProperty: string[]; // idAccordion | idProperty можна виключити з аккордеону якісь проперті або приховати цілий аккордеон
-     
-override: DynamicElementsOverride[]; // тут проперті яке буде перезаписано аналогічна модель(#Properties) тільки + idOverride що = або idAccordion, або idProperty, це дозволить перезаписати щось с type: all іншим проперті
+передавати в тому json в якому не type: all\n
+excludeProperty: string[]; // idAccordion | idProperty можна виключити з аккордеону якісь проперті або приховати цілий аккордеон\n
+override: DynamicElementsOverride[]; // тут проперті яке буде перезаписано аналогічна модель(#Properties) тільки + idOverride що = або idAccordion, або idProperty, це дозволить перезаписати щось с type: all іншим проперті\n
 
 - [IncludesVariables][1] string[] <br/>
      "fromNode" - все що динамічно виймається з keyForSave, <br/>
