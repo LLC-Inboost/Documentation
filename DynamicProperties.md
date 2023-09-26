@@ -28,7 +28,7 @@
         font-weight:500;
         font-size: 35px;
     }
-    .body {
+    .markdown-body {
         padding-right: 200px;
     }
     .inProgress {
@@ -43,7 +43,7 @@
     }
 </style>
 
-<div class="body">
+<div class="markdown-body">
 
 <p class="heading1">Динамічні властивості</p>
 <p class="heading2">для акордеонів правої панелі конструктора боту</p>
