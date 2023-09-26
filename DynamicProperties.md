@@ -1,48 +1,46 @@
-<html>
-    <head>
-        <style>
-            .heading1 {
-                color: teal;
-                font-weight:700;
-                font-size: 35px;
-                text-align: center;
-            }
-            .heading2 {
-                color: teal;
-                font-weight:500;
-                font-size: 20px;
-                text-align: center;
-            }
-            .menu {
-                position: fixed;
-                top:150px;
-                right:0;
-                background-color: #112323;
-                width: 200px;
-                padding: 6px;
-                color: white;
-            }
-            .property {
-                color: teal;
-                font-weight:500;
-                font-size: 35px;
-            }
-            .body {
-                padding-right: 200px;
-            }
-            .inProgress {
-                color: red;
-                font-style: italic;
-                font-size: 12px;
-            }
-            .completed {
-                color: green;
-                font-style: italic;
-                font-size: 12px;
-            }
-        </style>
-    </head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="github-markdown.css">
+<style>
+    .heading1 {
+        color: teal;
+        font-weight:700;
+        font-size: 35px;
+        text-align: center;
+    }
+    .heading2 {
+        color: teal;
+        font-weight:500;
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu {
+        position: fixed;
+        top:150px;
+        right:0;
+        background-color: #112323;
+        width: 200px;
+        padding: 6px;
+        color: white;
+    }
+    .property {
+        color: teal;
+        font-weight:500;
+        font-size: 35px;
+    }
+    .body {
+        padding-right: 200px;
+    }
+    .inProgress {
+        color: red;
+        font-style: italic;
+        font-size: 12px;
+    }
+    .completed {
+        color: green;
+        font-style: italic;
+        font-size: 12px;
+    }
+</style>
 
 <div class="body">
 
@@ -255,6 +253,3 @@
 ## <p id="CustomField" class="property">CustomField</p>
 
 </body>
-
-
-</html>
