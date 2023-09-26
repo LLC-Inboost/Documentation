@@ -1,3 +1,48 @@
+<html>
+    <head>
+        <style>
+            .heading1 {
+                color: teal;
+                font-weight:700;
+                font-size: 35px;
+                text-align: center;
+            }
+            .heading2 {
+                color: teal;
+                font-weight:500;
+                font-size: 20px;
+                text-align: center;
+            }
+            .menu {
+                position: fixed;
+                top:150px;
+                right:0;
+                background-color: #112323;
+                width: 200px;
+                padding: 6px;
+                color: white;
+            }
+            .property {
+                color: teal;
+                font-weight:500;
+                font-size: 35px;
+            }
+            .body {
+                padding-right: 200px;
+            }
+            .inProgress {
+                color: red;
+                font-style: italic;
+                font-size: 12px;
+            }
+            .completed {
+                color: green;
+                font-style: italic;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+
 
 <div class="body">
 
@@ -146,31 +191,31 @@
 ```
 
 ```"mode": "onlyDate"```  
-"propertyName": "2023-09-01"
+"propertyName": "2023-09-01"  
 ![тільки дата](./images/dynamicProperties/datePicker/onlyDate.png.jpg)
 
 ```"mode": "onlyTime"```  
-"propertyName": "07:36"
+"propertyName": "07:36"  
 ![тільки час](./images/dynamicProperties/datePicker/onlyTime.png.jpg)
 
 
 ```"mode": "dateWithTime"```  
-"propertyName": "2023-09-01T07:36"
+"propertyName": "2023-09-01T07:36"  
 ![дата з часом](./images/dynamicProperties/datePicker/dateWithTime.png.jpg)
 
 
 ```"mode": "twoDates"```  
-"propertyName": ["2023-09-01","2023-09-09"]
+"propertyName": ["2023-09-01","2023-09-09"]  
 ![дві дати](./images/dynamicProperties/datePicker/twoDates.png.jpg)
 
 
 ```"mode": "twoTimes"```  
-"propertyName": ["07:35","07:36"]
+"propertyName": ["07:35","07:36"]  
 ![два вироби часу](./images/dynamicProperties/datePicker/twoTimes.png.jpg)
 
 
 ```"mode": "twoDatesWithTime"```  
-"propertyName": ["2023-09-01T07:35","2023-09-09T07:36"]
+"propertyName": ["2023-09-01T07:35","2023-09-09T07:36"]  
 ![дві дати з часом](./images/dynamicProperties/datePicker/twoDatesWithTime.jpg)
 
 
@@ -211,44 +256,5 @@
 
 </body>
 
-<style>
-    .heading1 {
-        color: teal;
-        font-weight:700;
-        font-size: 35px;
-        text-align: center;
-    }
-    .heading2 {
-        color: teal;
-        font-weight:500;
-        font-size: 20px;
-        text-align: center;
-    }
-    .menu {
-        position: fixed;
-        top:150px;
-        right:0;
-        background-color: #112323;
-        width: 200px;
-        padding: 6px;
-        color: white;
-    }
-    .property {
-        color: teal;
-        font-weight:500;
-        font-size: 35px;
-    }
-    .body {
-        padding-right: 200px;
-    }
-    .inProgress {
-        color: red;
-        font-style: italic;
-        font-size: 12px;
-    }
-    .completed {
-        color: green;
-        font-style: italic;
-        font-size: 12px;
-    }
-</style>
+
+</html>
