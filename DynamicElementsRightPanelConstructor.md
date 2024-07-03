@@ -100,6 +100,15 @@ override: DynamicElementsOverride[]; // тут проперті яке буде 
 - Type: “Select” *обовязкове
 - SelectType: “single” | “multi” | "searchMulti" | "searchSingle" в залежності від цього типу будуть свг-шки в оціях або радіо або чекбокс *обовязкове і записуватись в проперті або один елемент або масив елементів
 - List: {label:string, value: any}[] список с опціями для селекту *обовязкове
+---
+### **Type SelectNodes**
+- Caption: { lang: string; value: string } [] це опис 
+- Index: number *обовязкове
+- Property: ключ від інтерфейсу ноди string *обовязкове
+- $css: { wrapper: CSS string, caption: CSS string,  }
+- Type: SelectNodes *обовязкове
+
+</br>Повертае випадаючий список дінамічно сформованних нод. При створенні нової ноди або нидаленні, список автоматично оновлюється
 
 
 #### Приклад двух контейнерів с вложеними пропеті
